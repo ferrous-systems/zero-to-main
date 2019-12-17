@@ -33,7 +33,6 @@ SECTIONS
 
     /* Reset vector */
     KEEP(*(.vector_table.reset_vector)); /* this is the `__RESET_VECTOR` symbol */
-    __reset_vector = .;
 
     /* Placeholder for other unused interrupts in the vector table.
      * The nRF52 should roughly be:
